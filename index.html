@@ -3,64 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquabus</title>
-
+    <title>Aqua Bus Kft. – Személyszállítás és Buszbérlés</title>
+    <!-- Tailwind CSS a modern, mobilbarát dizájnhoz -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f6f8;
-        }
-
-        header {
-            background: #0066cc;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-
-        section {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #222;
-            color: white;
-        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800">
 
-<header>
-    <h1>Aquabus</h1>
-    <p>Üdvözöljük weboldalunkon!</p>
-</header>
+    <!-- Navigációs sáv -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-sky-700 tracking-tight">
+                Aqua Bus <span class="text-slate-500 font-normal text-lg">Kft.</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#szolgaltatasok" class="hover:text-sky-600 transition">Szolgáltatások</a>
+                <a href="#rolunk" class="hover:text-sky-600 transition">Rólunk</a>
+                <a href="#flotta" class="hover:text-sky-600 transition">Járműpark</a>
+                <a href="#kapcsolat" class="hover:text-sky-600 transition">Kapcsolat</a>
+            </nav>
+            <a href="#kapcsolat" class="bg-sky-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-sky-700 transition shadow-sm">
+                Ajánlatkérés
+            </a>
+        </div>
+    </header>
 
-<section>
-    <div class="card">
-        <h2>Rólunk</h2>
-        <p>Itt jelenhet meg a cég bemutatkozása.</p>
+    <!-- Főképernyő (Hero szekció) -->
+    <section class="relative bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 text-white py-24 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Megbízható és kényelmes személyszállítás belföldön és külföldön
+            </h1>
+            <p class="text-lg md:text-xl text-sky-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Legyen szó céges rendezvényről, iskolai kirándulásról, reptéri transzferről vagy 
+                többnapos európai körútról, modern flottánkkal biztonságban célba ér.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#kapcsolat" class="bg-sky-500 hover:bg-sky-400 text-white font-semibold px-8 py-3.5 rounded-lg transition shadow-lg">
+                    Kérjen ingyenes árajánlatot
+                </a>
+                <a href="#szolgaltatasok" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3.5 rounded-lg transition backdrop-blur-sm">
+                    Szolgáltatásaink
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <h2>Szolgáltatásaink</h2>
-        <p>Itt írhatjátok le a fő szolgáltatásokat.</p>
+    <!-- Szolgáltatások -->
+    <section id="szolgaltatasok" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold text-slate-900 mb-3">Szolgáltatásaink</h2>
+            <p class="text-slate-600 max-w-xl mx-auto">
+                Rugalmas megoldásokat kínálunk minden utazási igényre, a kisebb csoportoktól a nagy létszámú rendezvényekig.
+            </p>
+        </div>
 
-        <h2>Kapcsolat</h2>
-        <p>Email: info@aquabus.hu</p>
-    </div>
-</section>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Kártya 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">
+                    🚌
+                </div>
+                <h3 class="text-xl font-bold mb-3">Belföldi és nemzetközi utak</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Turistaútvonalak, városlátogatások, síutak és nyaralások lebonyolítása tapasztalt, idegen nyelvet beszélő gépkocsivezetőkkel.
+                </p>
+            </div>
 
-<footer>
+            <!-- Kártya 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">
+                    💼
+                </div>
+                <h3 class="text-xl font-bold mb-3">Céges és dolgozói szállítás</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Konferenciák, csapatépítők, partnerlátogatások és szerződéses dolgozói járatok pontos, kiszámítható biztosítása.
+                </p>
+            </div>
+
+            <!-- Kártya 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center mb-6 text-2xl font-bold">
+                    ✈️
+                </div>
+                <h3 class="text-xl font-bold mb-3">Reptéri transzfer és kirándulás</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Háztól-házig transzferek, iskolai osztálykirándulások, sportcsapatok és esküvői vendégek kényelmes szállítása.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Miért válasszon minket / Rólunk -->
+    <section id="rolunk" class="bg-slate-100 py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-3">Miért válassza az Aqua Bus Kft.-t?</h2>
+                <p class="text-slate-600">Utasaink biztonsága és kényelme számunkra az elsődleges.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
+                    <span class="text-sky-600 text-xl font-bold">✓</span>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Kifogástalan műszaki állapot</h4>
+                        <p class="text-slate-600 text-sm">Járműveink rendszeres, szigorú szervizelésen esnek át minden hosszabb út előtt.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
+                    <span class="text-sky-600 text-xl font-bold">✓</span>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Tapasztalt sofőrök</h4>
+                        <p class="text-slate-600 text-sm">Udvarias, nagy helyismerettel és nemzetközi rutinnal rendelkező gépkocsivezetők.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
+                    <span class="text-sky-600 text-xl font-bold">✓</span>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Magas komfortfokozat</h4>
+                        <p class="text-slate-600 text-sm">Klímaberendezés, kényelmes dönthető ülések és tágas csomagtér a nyugodt utazásért.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start gap-4">
+                    <span class="text-sky-600 text-xl font-bold">✓</span>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Korrekt, rejtett költségek nélküli árak</h4>
+                        <p class="text-slate-600 text-sm">Minden megkeresésre egyedi, átlátható árajánlatot adunk az útvonal és időtartam alapján.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Járműpark -->
+    <section id="flotta" class="py-20 px-4 max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-slate-900 mb-3">Járműparkunk</h2>
+        <p class="text-slate-600 mb-10 max-w-xl mx-auto">
+            Kisbuszoktól a nagy turistabuszokig állunk rendelkezésére, a csoport létszámához igazodva.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-8 text-left">
+            <div class="bg-white p-6 rounded-xl border border-slate-200">
+                <h3 class="text-xl font-bold text-sky-700 mb-2">Mikrobuszok és Kisbuszok (8–20 fő)</h3>
+                <p class="text-slate-600 text-sm mb-4">Ideális kisebb társaságoknak, családi eseményekre, VIP szállításra vagy reptéri transzferekhez.</p>
+                <ul class="text-sm text-slate-500 space-y-1">
+                    <li>• Légkondicionált utastér</li>
+                    <li>• Kényelmes ülések</li>
+                    <li>• Rugalmas városi közlekedés</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200">
+                <h3 class="text-xl font-bold text-sky-700 mb-2">Turistabuszok (45–55+ fő)</h3>
+                <p class="text-slate-600 text-sm mb-4">Tökéletes választás osztálykirándulásokhoz, nemzetközi körutazásokhoz és nagy létszámú rendezvényekhez.</p>
+                <ul class="text-sm text-slate-500 space-y-1">
+                    <li>• Dönthető, kartámaszos ülések</li>
+                    <li>• Nagy méretű csomagtér</li>
+                    <li>• Mikrofon, audió/videó rendszer</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kapcsolat és Ajánlatkérés -->
+    <section id="kapcsolat" class="bg-sky-900 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Vegye fel velünk a kapcsolatot!</h2>
+                <p class="text-sky-100 mb-8 leading-relaxed">
+                    Kérjen árajánlatot telefonon vagy e-mailben! Kérjük, írja meg az indulás és érkezés helyszínét, az időpontot és az utasok várható létszámát.
+                </p>
+                <div class="space-y-4 text-sky-100">
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">Cégnév:</span> Aqua Bus Kft.
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">Telefon:</span> 
+                        <a href="tel:+36301234567" class="underline hover:text-white">+36 30 123 4567</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">E-mail:</span> 
+                        <a href="mailto:info@aquabus.hu" class="underline hover:text-white">info@aquabus.hu</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">Székhely / Indulás:</span> Budapest és környéke (országos kiszállással)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Egyszerű űrlap (mailto vagy Formspree bekötéshez) -->
+            <div class="bg-white text-slate-800 p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Gyors üzenetküldés</h3>
+                <form action="mailto:info@aquabus.hu" method="post" enctype="text/plain" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Név / Cégnév</label>
+                        <input type="text" name="Nev" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">E-mail cím vagy Telefonszám</label>
+                        <input type="text" name="Elerhetoseg" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Utazás részletei (időpont, úti cél, létszám)</label>
+                        <textarea name="Uzenet" rows="3" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 rounded-lg transition">
+                        Ajánlatkérés küldése
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lábléc -->
+    <footer class="bg-slate-950 text-slate-400 py-8 px-4 text-center text-sm">
+        <p>© 2026 Aqua Bus Kft. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>
     © 2026 Aquabus
 </footer>
 
