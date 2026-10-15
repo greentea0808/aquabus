@@ -139,28 +139,108 @@
         </div>
     </section>
 
-    <!-- Járműpark -->
+   <!-- Járműpark -->
     <section id="flotta" class="py-20 px-4 max-w-5xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-slate-900 mb-3">Járműparkunk</h2>
         <p class="text-slate-600 mb-10 max-w-xl mx-auto">
             Kisbuszoktól a nagy turistabuszokig állunk rendelkezésére, a csoport létszámához igazodva.
         </p>
         <div class="grid sm:grid-cols-2 gap-8 text-left">
-            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
-                <img src="tourneo_custom.png" alt="Ford Tourneo Custom kisbusz" class="w-full h-56 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-sky-700 mb-2">Mikrobuszok és Kisbuszok (8–20 fő)</h3>
-                    <p class="text-slate-600 text-sm mb-4">Ideális kisebb társaságoknak, családi eseményekre, VIP szállításra vagy reptéri transzferekhez.</p>
-                    <ul class="text-sm text-slate-500 space-y-1">
+            <!-- Kisbusz kártya -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                <div class="w-full h-64 bg-slate-100 flex items-center justify-center p-4">
+                    <img src="tourneo_custom.png" alt="Ford Tourneo Custom kisbusz" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-sky-700 mb-2">Mikrobuszok és Kisbuszok (8–20 fő)</h3>
+                        <p class="text-slate-600 text-sm mb-4">Ideális kisebb társaságoknak, családi eseményekre, VIP szállításra vagy reptéri transzferekhez.</p>
+                    </div>
+                    <ul class="text-sm text-slate-500 space-y-1 border-t border-slate-100 pt-3">
                         <li>• Légkondicionált utastér</li>
                         <li>• Kényelmes ülések</li>
                         <li>• Rugalmas városi közlekedés</li>
                     </ul>
                 </div>
             </div>
-            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
-                <img src="merci_lampa.PNG" alt="Mercedes-Benz turistabusz" class="w-full h-56 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-sky-700 mb-2">Turistabuszok (45–55+ fő)</h3>
-                    <p class="text-slate-600 text-sm mb-4">Tökéletes választás osztálykirándulásokhoz, nemzetközi körutazásokhoz és nagy létszámú rendezvényekhez.</p>
-                    <ul class="
+
+            <!-- Turistabusz kártya -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                <div class="w-full h-64 bg-slate-900 overflow-hidden flex items-center justify-center">
+                    <img src="merci_lampa.PNG" alt="Mercedes-Benz turistabusz" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-sky-700 mb-2">Turistabuszok (45–55+ fő)</h3>
+                        <p class="text-slate-600 text-sm mb-4">Tökéletes választás osztálykirándulásokhoz, nemzetközi körutazásokhoz és nagy létszámú rendezvényekhez.</p>
+                    </div>
+                    <ul class="text-sm text-slate-500 space-y-1 border-t border-slate-100 pt-3">
+                        <li>• Dönthető, kartámaszos ülések</li>
+                        <li>• Nagy méretű csomagtér</li>
+                        <li>• Mikrofon, audió/videó rendszer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kapcsolat és Ajánlatkérés -->
+    <section id="kapcsolat" class="bg-sky-900 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Vegye fel velünk a kapcsolatot!</h2>
+                <p class="text-sky-100 mb-8 leading-relaxed">
+                    Kérjen árajánlatot telefonon vagy e-mailben! Kérjük, írja meg az indulás és érkezés helyszínét, az időpontot és az utasok várható létszámát.
+                </p>
+                <div class="space-y-4 text-sky-100">
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">Cégnév:</span> Aqua Bus Kft.
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">Telefon:</span> 
+                        <a href="tel:+36309847040" class="underline hover:text-white">+36 30 984 70 40</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">E-mail:</span> 
+                        <a href="mailto:aquatibierd@gmail.com" class="underline hover:text-white">aquatibierd@gmail.com</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="font-bold text-white">Székhely / Indulás:</span> Budapest és környéke (országos kiszállással)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Egyszerű űrlap -->
+            <div class="bg-white text-slate-800 p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Gyors üzenetküldés</h3>
+                <form action="https://formsubmit.co/kunjazmin.erd@gmail.com" method="POST" class="space-y-4">
+                    <!-- Spam védelem és átirányítás kikapcsolása -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Új árajánlatkérés - Aqua Bus">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Név / Cégnév</label>
+                        <input type="text" name="Nev" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">E-mail cím vagy Telefonszám</label>
+                        <input type="text" name="Elerhetoseg" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Utazás részletei (időpont, úti cél, létszám)</label>
+                        <textarea name="Uzenet" rows="3" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 rounded-lg transition">
+                        Ajánlatkérés küldése
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lábléc -->
+    <footer class="bg-slate-950 text-slate-400 py-8 px-4 text-center text-sm">
+        <p>© 2026 Aqua Bus Kft. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>
